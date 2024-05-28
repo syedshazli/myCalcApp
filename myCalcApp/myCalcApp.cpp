@@ -5,10 +5,19 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::cout << "This is a calculator";
-    //lets build something that can change the world!
-    //last test
+    
+    /*
+    * first, let's make a simple calculator. From there, we can decide if we want to expand
+    * Here's the thing about a calculator. You should be able to complete any amount of operations.
+    * 
+    * What operations would you like to complete? add for a for add, s for subtract, m for multiply, r for remainder, etc"
+    * USER GIVES 2 NUMBERS
+    * Would you like to add, subtract, multi
+    * 
+    */
+
+    std::cout << "";
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
