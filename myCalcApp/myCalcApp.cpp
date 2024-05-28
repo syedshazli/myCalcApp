@@ -22,7 +22,7 @@ int main()
     *   Divide, give me the numbers you'd like to divide from each other (same input as subtraction) 
     *   Remainder: Give me the two numbers and I'll find the remainder (same input as subtraction) (could be polymorphism w/divide class)
     * 
-    *   Give the user the final output based on the operation. 
+    *   Give the user the final output based on the operation. Make sure to handle edge cases like division by zero, as NAN
     *       EX: Your result is 5. Would you like to (c)lear, (a)dd, (s)ubtract, (m)ultiply, (d)ivide, (r)emainder, or quit?
     * 
     *   I think that's all. Push to main 
