@@ -1,2 +1,2 @@
-Notes on Object Oriented Programming in C++. Took a course about Systems Programming freshmen year but need a refresher
+Notes on Object Oriented Programming in C++. AIming to use inheritance, polymorphism, etc in the project. Took a course about Systems Programming freshmen year but need a refresher
 
