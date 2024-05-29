@@ -1,0 +1,1 @@
+Notes on Object Oriented Programming in C++. Took a course about Systems Programming freshmen year but need a refresher
