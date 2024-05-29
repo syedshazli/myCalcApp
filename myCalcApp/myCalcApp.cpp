@@ -26,6 +26,14 @@ int main()
     *       EX: Your result is 5. Would you like to (c)lear, (a)dd, (s)ubtract, (m)ultiply, (d)ivide, (r)emainder, or quit?
     * 
     *   I think that's all. Push to main 
+    * 
+    *  Day two Goals:
+    *   Learn more about OOP in C++
+    *   Implement simple calculator interface
+    *       Do this using class inheritance and things of that nature
+    *           let's see where it takes us!
+    * 
+    * 
     */
 
     std::cout << "Hi!";
