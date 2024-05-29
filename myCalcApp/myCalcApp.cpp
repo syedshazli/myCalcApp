@@ -36,7 +36,7 @@ int main()
     * 
     */
 
-    std::cout << "Hi!";
+    std::cout << "Hi, welcome to Syed Shazli's calculator!";
 
 }
 
