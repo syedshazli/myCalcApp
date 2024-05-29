@@ -1,5 +1,5 @@
 // myCalcApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Main is our driver class that asks the user about initial operation input
 
 #include <iostream>
 
@@ -7,23 +7,7 @@ int main()
 {
     
     /*
-    * first, let's make a simple calculator. From there, we can decide if we want to expand
-    * Here's the thing about a calculator. You should be able to complete any amount of operations.
-    * 
-    * What operations would you like to complete? add for a for add, s for subtract, m for multiply, d for divide,
-                                                        r for remainder, q for quit. etc"
-
-    * IF ITS A VALID LETTER, USER GIVES A OPERATION... ELSE WE ASK TO TRY AGAIN
-    * 
-    * BASED ON THE OPERATION.... (MAY NEED MULTIPLE CLASSES. OR INHERITANCE PATTERN LMAO)
-    *   Subtract. Give me the two numbers you'd like to subtract. Ex: 5 10 will subtract 5 from 10, and I will output 5
-    *   Multiply: Give me the two numbers you'd like to multiply
-    *   Add: Give me the numbers you'd like to add
-    *   Divide, give me the numbers you'd like to divide from each other (same input as subtraction) 
-    *   Remainder: Give me the two numbers and I'll find the remainder (same input as subtraction) (could be polymorphism w/divide class)
-    * 
-    *   Give the user the final output based on the operation. Make sure to handle edge cases like division by zero, as NAN
-    *       EX: Your result is 5. Would you like to (c)lear, (a)dd, (s)ubtract, (m)ultiply, (d)ivide, (r)emainder, or quit?
+   
     * 
     *   I think that's all. Push to main 
     * 
@@ -35,10 +19,26 @@ int main()
     * 
     * 
     */
+    char input;
+    std::cout << "Hi, welcome to Syed Shazli's calculator!\n What operation would you like to complete? Type 'a' for addition, 's' for subtraction, 'm' for multiplication, 'd' for division, and 'r' for remiander."  ;
+    std::cin >> input;
+    bool flag = true;
+    //bug here. It fails for a valid input the first time and additionally if you try a valid input second time it breaks
+    while (flag == true) {
+        if (input != 'a' && input != 's' && input != 'm' && input != 'd' && input != 'r') {
+            std::cout << "That is not a valid operation, please try again!";
+            std::cin >> input;
+        }
+        else { 
+            std::cout << "requested valid operation. loading....";
+            flag = false; 
+        }
+        
+    } //end of while, obtained valid user input
+    
 
-    std::cout << "Hi, welcome to Syed Shazli's calculator!";
 
-}
+} //end of main, move on to class structure
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
