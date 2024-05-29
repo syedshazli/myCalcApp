@@ -23,7 +23,7 @@ int main()
     std::cout << "Hi, welcome to Syed Shazli's calculator!\n What operation would you like to complete? Type 'a' for addition, 's' for subtraction, 'm' for multiplication, 'd' for division, and 'r' for remiander."  ;
     std::cin >> input;
     bool flag = true;
-   
+    //bug here. It fails for a valid input the first time and additionally if you try a valid input second time it breaks
     while (flag == true) {
         if (input != 'a' && input != 's' && input != 'm' && input != 'd' && input != 'r') {
             std::cout << "That is not a valid operation, please try again!";
@@ -34,7 +34,7 @@ int main()
             flag = false; 
         }
         
-    } //end of while, obtained valid user input 
+    } //end of while, obtained valid user input
     
 
 
