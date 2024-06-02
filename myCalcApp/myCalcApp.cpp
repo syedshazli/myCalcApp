@@ -30,7 +30,6 @@ int main()
             std::cin >> input;
         }
         else { 
-            std::cout << "requested valid operation. loading....";
             flag = false; 
         }
         
@@ -41,10 +40,24 @@ int main()
         //then we send this to the specific class
     switch (input) {
     case('a'):
-        std::cout << "You selected addition! Loading...";
+        std::cout << "You selected the addition operation! Loading...";
+        break;
 
     case('s'):
-        std::cout << "You selected subtraction! Loading...";
+        std::cout << "You selected the subtraction operation! Loading...";
+        break;
+
+    case('m'):
+        std::cout << "You selected the multiplication operation! Loading...";
+        break;
+
+    case('d'):
+        std::cout << "You selected the division operation! Loading...";
+        break;
+
+    case('r'):
+        std::cout << "You selected the remainder operation! Loading...";
+        break;
 
         //add mult, div, and mod
     }
