@@ -37,6 +37,19 @@ int main()
     } //end of while, obtained valid user input 
     
 
+    //Switch statement here that says "You selected the X operation, loading..."
+        //then we send this to the specific class
+    switch (input) {
+    case('a'):
+        std::cout << "You selected addition! Loading...";
+
+    case('s'):
+        std::cout << "You selected subtraction! Loading...";
+
+        //add mult, div, and mod
+    }
+    
+
     //operation(input); 
     // will be how we call the function Im assuming
         //also, whats the difference in project--> add new class and project --> add new item?
