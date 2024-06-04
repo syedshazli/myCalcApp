@@ -1,2 +1,20 @@
 Notes on Object Oriented Programming in C++. AIming to use inheritance, polymorphism, etc in the project. Took a course about Systems Programming freshmen year but need a refresher
 
+class MyClass {       // The class
+  public:             // Access specifier, different from java
+    int myNum;        // Attribute (int variable)
+    string myString;  // Attribute (string variable)
+}; //remember the ; at the end of the class!
+
+int main() {
+  MyClass myObj;  // Create an object of MyClass
+
+  // Access attributes and set values
+  myObj.myNum = 15; 
+  myObj.myString = "Some text";
+
+  // Print attribute values
+  cout << myObj.myNum << "\n";
+  cout << myObj.myString;
+  return 0;
+}
