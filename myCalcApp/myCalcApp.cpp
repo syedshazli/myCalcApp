@@ -5,6 +5,8 @@
 #include "operation.h"
 using namespace std;
 
+int operation();
+
 int main()
 {
     
@@ -17,6 +19,9 @@ int main()
     *   Implement simple calculator interface
     *       Do this using class inheritance and things of that nature
     *           let's see where it takes us!
+    * 
+    * Step 3: After building the simple interface, try implementing an API in the project as well
+    *  Do we want to first make a GUI or an API? I think including the API earlier might be better, more research is needed
     * 
     * 
     */
@@ -42,22 +47,29 @@ int main()
     switch (input) {
     case('a'):
         std::cout << "You selected the addition operation! Loading...";
+        //ask for two numbers, create specific object
+        operation aditya;
+        aditya.show_add();
         break;
 
     case('s'):
         std::cout << "You selected the subtraction operation! Loading...";
+       // Subtract minus;
         break;
 
     case('m'):
         std::cout << "You selected the multiplication operation! Loading...";
+        //Multiply mult;
         break;
 
     case('d'):
         std::cout << "You selected the division operation! Loading...";
+       // Divide div
         break;
 
     case('r'):
         std::cout << "You selected the remainder operation! Loading...";
+       // Remainder rem;
         break;
 
         //add mult, div, and mod
@@ -85,3 +97,5 @@ int main()
 //   4. Use the Error List window to view errors
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
+
