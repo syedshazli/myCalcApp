@@ -55,6 +55,8 @@ int main()
     case('s'):
         std::cout << "You selected the subtraction operation! Loading...";
        // Subtract minus;
+        operation SUBTRACT;
+        SUBTRACT.show_subtract();
         break;
 
     case('m'):

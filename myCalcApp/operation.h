@@ -5,5 +5,6 @@
 class operation{
 public:
 	 void show_add();
+	 void show_subtract();
 };
 #endif
