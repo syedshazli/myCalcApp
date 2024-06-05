@@ -5,7 +5,7 @@
 #include "operation.h"
 using namespace std;
 
-int operation();
+
 
 int main()
 {
@@ -48,8 +48,8 @@ int main()
     case('a'):
         std::cout << "You selected the addition operation! Loading...";
         //ask for two numbers, create specific object
-        operation aditya;
-        aditya.show_add();
+        operation ADD;
+        ADD.show_add();
         break;
 
     case('s'):
