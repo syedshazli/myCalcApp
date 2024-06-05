@@ -7,7 +7,7 @@ void operation::show_add() {
 	std::cout << "What two numbers would you like to add?";
 	std::cin >> x;
 	std::cin >> y;
-	std::cout << "Your sum is " << x + y;
+	std::cout << "The sum of " <<x <<" + " <<y<< " is " << x + y;
 }
 
 void operation::show_subtract() {
@@ -17,4 +17,44 @@ void operation::show_subtract() {
 	std::cin >> x;
 	std::cin >> y;
 	std::cout << x<< " - " << y  << " is " << x - y;
+}
+
+void operation::show_multiply() {
+	float x = 0;
+	float y = 0;
+	std::cout << "What two numbers would you like to multiply?";
+	std::cin >> x;
+	std::cin >> y;
+	std::cout << "Your product of " <<x << " and " <<y << " is " << x*y;
+}
+
+void operation::show_divide(){
+	//make sure no 0's in divisor
+	float x = 0;
+	float y = 0;
+	std::cout << "What two numbers would you like to divide? (EX: to divide 3 from 15 for a result of 5 type '15' '3')";
+	std::cin >> x;
+	std::cin >> y;
+	if (y == 0) {
+
+	}
+
+	std::cout << "Your quotient of " <<x<<" divided by " <<y <<" is " << x/y;
+}
+
+
+void operation::show_remainder() {
+	//make sure no 0's in divisor
+	float x = 0;
+	float y = 0;
+	std::cout << "What two numbers would you like to find a remainder for? (EX: to divide 6 from 15 for a remainder of 3 type '15' '6')";
+	std::cin >> x;
+	std::cin >> y;
+
+	if(y == 0){//redo
+	}
+
+	float z = remainder(x, y);
+	std::cout << "The remainder after dividing " <<x<<" from " <<y << " is " << z;
+
 }

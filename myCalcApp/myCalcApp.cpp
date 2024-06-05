@@ -22,7 +22,7 @@ int main()
     * 
     * Step 3: After building the simple interface, try implementing an API in the project as well
     *  Do we want to first make a GUI or an API? I think including the API earlier might be better, more research is needed
-    * 
+    * Also, do we want a clear interface? more operations after first one? Decide before doing API and GUI stuff
     * 
     */
     char input;
@@ -53,25 +53,31 @@ int main()
         break;
 
     case('s'):
-        std::cout << "You selected the subtraction operation! Loading...";
+        std::cout << "You selected the subtraction operation! Loading...\n";
        // Subtract minus;
         operation SUBTRACT;
         SUBTRACT.show_subtract();
         break;
 
     case('m'):
-        std::cout << "You selected the multiplication operation! Loading...";
+        std::cout << "You selected the multiplication operation! Loading...\n";
         //Multiply mult;
+        operation multiply;
+        multiply.show_multiply();
         break;
 
     case('d'):
-        std::cout << "You selected the division operation! Loading...";
+        std::cout << "You selected the division operation! Loading...\n";
        // Divide div
+        operation divide;
+        divide.show_divide();
         break;
 
     case('r'):
-        std::cout << "You selected the remainder operation! Loading...";
+        std::cout << "You selected the remainder operation! Loading...\n";
        // Remainder rem;
+        operation remainder;
+        remainder.show_remainder();
         break;
 
         //add mult, div, and mod

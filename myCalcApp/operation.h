@@ -6,5 +6,9 @@ class operation{
 public:
 	 void show_add();
 	 void show_subtract();
+	 void show_multiply();
+	 void show_divide();
+	 void show_remainder();
+
 };
 #endif
