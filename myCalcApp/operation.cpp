@@ -36,7 +36,7 @@ void operation::show_divide(){
 	std::cin >> x;
 	std::cin >> y;
 	if (y == 0) {
-
+		//create functionality. Maybe while loop inside whole function which can be helpful for later
 	}
 
 	std::cout << "Your quotient of " <<x<<" divided by " <<y <<" is " << x/y;
@@ -51,7 +51,8 @@ void operation::show_remainder() {
 	std::cin >> x;
 	std::cin >> y;
 
-	if(y == 0){//redo
+	if(y == 0){
+		//create functionality. Maybe while loop inside whole function which can be helpful for later
 	}
 
 	float z = remainder(x, y);
