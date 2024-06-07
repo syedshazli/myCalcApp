@@ -35,7 +35,10 @@ void operation::show_divide(){
 	std::cout << "What two numbers would you like to divide? (EX: to divide 3 from 15 for a result of 5 type '15' '3')";
 	std::cin >> x;
 	std::cin >> y;
-	if (y == 0) {
+	while (y == 0) {
+		std::cout << "No division by 0! Try again";
+		std::cin >> x;
+		std::cin >> y;
 		//create functionality. Maybe while loop inside whole function which can be helpful for later
 	}
 
@@ -51,7 +54,10 @@ void operation::show_remainder() {
 	std::cin >> x;
 	std::cin >> y;
 
-	if(y == 0){
+	while(y == 0){
+		std::cout << "No division by 0! Try again";
+		std::cin >> x;
+		std::cin >> y;
 		//create functionality. Maybe while loop inside whole function which can be helpful for later
 	}
 
