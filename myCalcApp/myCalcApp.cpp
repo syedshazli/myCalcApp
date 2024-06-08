@@ -24,6 +24,7 @@ int main()
     *  Do we want to first make a GUI or an API? I think including the API earlier might be better, more research is needed
     * Also, do we want a clear interface? more operations after first one? Decide before doing API and GUI stuff
     * 
+    * Are there any other complex operations we might want to implement? Sqrt, exponents, e^x, etc? Commit
     */
     char input;
     std::cout << "Hi, welcome to Syed Shazli's calculator!\n What operation would you like to complete? Type 'a' for addition, 's' for subtraction, 'm' for multiplication, 'd' for division, and 'r' for remiander."  ;

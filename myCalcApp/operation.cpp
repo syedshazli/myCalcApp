@@ -58,10 +58,9 @@ void operation::show_remainder() {
 		std::cout << "No division by 0! Try again";
 		std::cin >> x;
 		std::cin >> y;
-		//create functionality. Maybe while loop inside whole function which can be helpful for later
 	}
 
-	float z = remainder(x, y);
+	float z = remainder(x, y); //remainder function
 	std::cout << "The remainder after dividing " <<x<<" from " <<y << " is " << z;
 
 }
