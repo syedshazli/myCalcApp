@@ -9,6 +9,7 @@ public:
 	 void show_multiply();
 	 void show_divide();
 	 void show_remainder();
+	 void show_exponent()
 
 };
 #endif

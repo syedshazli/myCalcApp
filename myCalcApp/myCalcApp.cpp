@@ -28,12 +28,12 @@ int main()
     * Also using Visual Studio 2022 for work
     */
     char input;
-    std::cout << "Hi, welcome to Syed Shazli's calculator!\n What operation would you like to complete? Type 'a' for addition, 's' for subtraction, 'm' for multiplication, 'd' for division, and 'r' for remiander."  ;
+    std::cout << "Hi, welcome to Syed Shazli's calculator!\n What operation would you like to complete? Type 'a' for addition, 's' for subtraction, 'm' for multiplication, 'd' for division, 'e' for exponents, and 'r' for remiander."  ;
     std::cin >> input;
     bool flag = true;
    
     while (flag == true) {
-        if (input != 'a' && input != 's' && input != 'm' && input != 'd' && input != 'r') {
+        if (input != 'a' && input != 's' && input != 'm' && input != 'd' && input != 'r' && input != 'e') {
             std::cout << "That is not a valid operation, please try again!";
             std::cin >> input;
         }
@@ -80,6 +80,12 @@ int main()
        // Remainder rem;
         operation remainder;
         remainder.show_remainder();
+        break;
+
+    case('e'):
+        std::cout << "You selected an exponential operation! Loading... ";
+        operation exp;
+        exp.show_exponent();
         break;
 
         //add mult, div, and mod
