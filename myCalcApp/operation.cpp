@@ -79,3 +79,7 @@ void operation::show_exponent(){
 
 
 }
+
+void operation::show_sqrt() {
+
+}

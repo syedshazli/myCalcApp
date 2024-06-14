@@ -33,7 +33,7 @@ int main()
     bool flag = true;
    
     while (flag == true) {
-        if (input != 'a' && input != 's' && input != 'm' && input != 'd' && input != 'r' && input != 'e') {
+        if (input != 'a' && input != 's' && input != 'm' && input != 'd' && input != 'r' && input != 'e' && input!= 'sqrt') {
             std::cout << "That is not a valid operation, please try again!";
             std::cin >> input;
         }
@@ -89,6 +89,12 @@ int main()
         break;
 
         //add mult, div, and mod
+
+    case('sqrt'):
+        std::cout << "You selected the square root operation! Loading...";
+        operation sqrt;
+        sqrt.show_sqrt();
+        break;
     }
     
 
