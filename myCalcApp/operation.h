@@ -10,7 +10,7 @@ public:
 	 void show_divide();
 	 void show_remainder();
 	 void show_exponent();
-	 void show_sqrt()
+	 void show_sqrt();
 
 };
 #endif

@@ -81,5 +81,10 @@ void operation::show_exponent(){
 }
 
 void operation::show_sqrt() {
+	float x = 0;
+	float y = 0;
+	std::cout << "What two numbers would you like to use for calculating an exponent? (EX: to raise 2 to the power 3 to get a result of 8, type '2' '3')";
+	std::cin >> x;
+	std::cin >> y;
 
 }
