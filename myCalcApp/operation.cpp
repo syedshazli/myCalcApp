@@ -1,6 +1,7 @@
 #include "operation.h"
 #include <iostream>
 //Operation class has these methods
+//redesign to create an interface
 void operation::show_add() {
 	float x = 0;
 	float y = 0;
